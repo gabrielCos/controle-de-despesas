@@ -1,6 +1,7 @@
 import React from "react";
 
 import Expenses from "./componentes/Expenses/Expenses";
+import NewExpense from "./componentes/NewExpense/NewExpense";
 
 //componente serve para saber QUAIS dados serão usados para popular as despesas
 
@@ -33,9 +34,14 @@ const App = ()=> {
       date: new Date(2021, 1, 7),
     },
   ];
+  const addExpenseHandler = expense => {
+    console.log('In App.js');
+    console.log(expense)
+  };
 
   return (
     <div>
+      <NewExpense onAddExpense = {addExpenseHandler} />
       <Expenses items={expenses}/>
     </div>
   );

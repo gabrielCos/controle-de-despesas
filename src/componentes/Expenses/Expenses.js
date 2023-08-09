@@ -10,10 +10,6 @@ const Expenses = (props) => {
 
     return(
         <Card className="expenses">
-        {/*Outra maneira de usar as props seria 
-        <ExpenseItem
-        expenses = {expenses[0]}
-        ></ExpenseItem> */}
             <ExpenseItem
             title = {props.items[0].title}
             amount = {props.items[0].amount}
