@@ -21,6 +21,7 @@ const ExpenseForm = (props) => {
         setEnteredDate(event.target.value);
     };
 
+    //criando um objeto com os valores passados dentro dos inputs
     const submitHandler = (event) => {
         event.preventDefault();
 
@@ -30,6 +31,8 @@ const ExpenseForm = (props) => {
             date: new Date(enteredDate),
         };
         props.onSaveExpenseData(expenseData);
+
+        //limpando o formulário quando a despesa for adicionada
         setEnteredTitle('');
         setEnteredAmount('');
         setEnteredDate('');

@@ -12,3 +12,9 @@ O segundo commit se trata de adicionar um formulário para que novas despesas po
 
 - Estudo de como usar múltiplos estados
 - Estudo de lifting up the state, como levar dados de um componente para outro
+
+3º Commit:
+
+- Adição de botão para adicionar despesas
+- Adição de filtro por ano 
+- Array de despesas colocado em ordem decrescente 
